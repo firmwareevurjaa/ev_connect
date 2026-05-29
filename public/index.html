@@ -1524,47 +1524,418 @@ footer{
 
         </div>
 
-        <div class="event-gallery">
+        <div class="previous-media-layout">
 
-            <article class="gallery-card">
+            <div class="gallery-column">
 
-                <img src="https://via.placeholder.com/800x520?text=EV+Rally+Crowd" alt="Rally crowd at last event">
+                <article class="gallery-card gallery-large">
 
-                <div class="gallery-meta">
-                    <h3>Huge Rally Turnout</h3>
-                    <p>Participants gathered from across Indore and nearby cities to join the electrifying movement.</p>
+                    <img src="images/previous-events/prev-1.jpeg" alt="Electric mobility rally">
+
+                    <div class="gallery-meta">
+                        <h3>Rally Energy</h3>
+                        
+                    </div>
+
+                </article>
+
+                <div class="gallery-grid-2">
+
+                    <article class="gallery-card">
+
+                        <img src="images/previous-events/prev-2.jpeg" alt="Charging showcase">
+
+                        <div class="gallery-meta">
+                            <h3>PreRally Moments</h3>
+                           
+                        </div>
+
+                    </article>
+
+                    <article class="gallery-card">
+
+                        <img src="images/previous-events/prev-3.jpeg" alt="Media and creators">
+
+                        <div class="gallery-meta">
+                            <h3>Creators In Focus</h3>
+                            
+                        </div>
+
+                    </article>
+
                 </div>
 
-            </article>
+            </div>
 
-            <article class="gallery-card">
+            <div class="video-column">
 
-                <img src="https://via.placeholder.com/800x520?text=Charging+Showcase" alt="Electric vehicle charging showcase">
-
-                <div class="gallery-meta">
-                    <h3>Charging Showcase</h3>
-                    <p>Live demonstrations of EV charging setups, accessories, and sustainable mobility solutions.</p>
+                <div class="video-header">
+                    <div class="section-chip">MEDIA COVERAGE</div>
+                    <h2>Watch the coverage & highlights</h2>
+                    <p>Press moments, creator snippets and past event memories — embedded directly here.</p>
                 </div>
 
-            </article>
+                <div class="video-grid">
 
-            <article class="gallery-card">
+                    <article class="video-card">
+                        <iframe
+                            loading="lazy"
+                            src="https://www.youtube.com/embed/-HEvBFnnVsU"
+                            title="EV Connect - Media Coverage 1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                        <h4>Creator & Press Moment</h4>
+                    </article>
 
-                <img src="https://via.placeholder.com/800x520?text=Media+Coverage" alt="Media coverage at EV event">
+                    <article class="video-card">
+                        <iframe
+                            loading="lazy"
+                            src="https://www.youtube.com/embed/XLiUQxNGkmk"
+                            title="EV Connect - Media Coverage 2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                        <h4>Rally Highlight</h4>
+                    </article>
 
-                <div class="gallery-meta">
-                    <h3>Media Coverage</h3>
-                    <p>Bollywood-style media action, influencer meetups, and event highlights captured by cameras.</p>
+                    <article class="video-card">
+                        <iframe
+                            loading="lazy"
+                            src="https://www.youtube.com/embed/-HEvBFnnVsU"
+                            title="EV Connect - Media Coverage 3"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                        <h4>More From The Moment</h4>
+                    </article>
+
                 </div>
 
-            </article>
+            </div>
 
         </div>
 
     </div>
 
 </section>
+<style>
+    /* =========================================================
+   PREVIOUS EVENTS — PREMIUM CREATIVE SECTION
+========================================================= */
 
+.previous-events{
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top left, rgba(0,255,163,0.08), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(0,170,255,0.08), transparent 30%),
+        #050816;
+}
+
+/* Background Glow */
+.previous-events::before{
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(0,255,163,0.12), transparent 70%);
+    top: -300px;
+    right: -250px;
+    filter: blur(40px);
+    z-index: 0;
+}
+
+.previous-events .container{
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.previous-events .section-header{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.previous-events .section-chip{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 22px;
+    border-radius: 100px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    color: #00ffa3;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.previous-events .section-header h2{
+    font-size: clamp(2.4rem, 4vw, 4.8rem);
+    line-height: 1.1;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.previous-events .section-intro{
+    max-width: 760px;
+    margin: auto;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.72);
+}
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.previous-media-layout{
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* =========================================================
+   GALLERY SIDE
+========================================================= */
+
+.gallery-column{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.gallery-grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.gallery-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    min-height: 280px;
+    background: #111827;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease,
+        border-color 0.5s ease;
+}
+
+.gallery-large{
+    min-height: 520px;
+}
+
+.gallery-card:hover{
+    transform: translateY(-12px) scale(1.01);
+    border-color: rgba(0,255,163,0.35);
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.55),
+        0 0 40px rgba(0,255,163,0.15);
+}
+
+.gallery-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.gallery-card:hover img{
+    transform: scale(1.08);
+}
+
+/* Dark cinematic overlay */
+.gallery-card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to top,
+        rgba(0,0,0,0.82) 5%,
+        rgba(0,0,0,0.15) 50%,
+        rgba(0,0,0,0.05) 100%);
+}
+
+/* Floating accent glow */
+.gallery-card::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(0,255,163,0.18);
+    filter: blur(70px);
+    top: -40px;
+    right: -40px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-card:hover::before{
+    opacity: 1;
+}
+
+/* =========================================================
+   TEXT OVERLAY
+========================================================= */
+
+.gallery-meta{
+    position: absolute;
+    left: 28px;
+    bottom: 28px;
+    z-index: 3;
+}
+
+.gallery-meta h3{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.45s ease;
+}
+
+.gallery-card:hover .gallery-meta h3{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* =========================================================
+   VIDEO COLUMN
+========================================================= */
+
+.video-column{
+    position: sticky;
+    top: 120px;
+}
+
+.video-header{
+    margin-bottom: 30px;
+}
+
+.video-header h2{
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.video-header p{
+    color: rgba(255,255,255,0.72);
+    line-height: 1.8;
+}
+
+.video-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.video-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    padding: 14px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(18px);
+    transition: all 0.45s ease;
+}
+
+.video-card:hover{
+    transform: translateY(-10px);
+    border-color: rgba(0,255,163,0.4);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.45),
+        0 0 30px rgba(0,255,163,0.12);
+}
+
+.video-card iframe{
+    width: 100%;
+    height: 230px;
+    border: none;
+    border-radius: 18px;
+}
+
+.video-card h4{
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 16px 8px 6px;
+    letter-spacing: 0.4px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width: 1100px){
+
+    .previous-media-layout{
+        grid-template-columns: 1fr;
+    }
+
+    .video-column{
+        position: relative;
+        top: unset;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .previous-events{
+        padding: 90px 0;
+    }
+
+    .gallery-grid-2{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-large{
+        min-height: 400px;
+    }
+
+    .gallery-card{
+        min-height: 260px;
+    }
+
+    .video-card iframe{
+        height: 220px;
+    }
+
+    .gallery-meta h3{
+        font-size: 1.35rem;
+    }
+
+    .video-header h2{
+        font-size: 2rem;
+    }
+
+}
+</style>
 <!-- ================= SCHEDULE ================= -->
 
 <section id="schedule">
@@ -1793,7 +2164,7 @@ footer{
 
                         <i class="fa-solid fa-calendar-days"></i>
 
-                        June 7, 2026
+                        June 14, 2026
 
                     </div>
 

@@ -281,8 +281,9 @@ const submitRegistration = async event => {
             body: JSON.stringify(payload)
         });
 
-        if (response.ok) {
-            window.location.href = '/thankyou.html';
+    if (response.ok) {
+        const data = await response.json();
+        window.location.href = '/thankyou.html?code=' + encodeURIComponent(data.code || '');
         } else {
             window.location.href = '/error.html';
         }
