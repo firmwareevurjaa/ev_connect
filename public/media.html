@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media & Highlights | EV Connect 2026</title>
+<style>
+:root{--bg:#000;--card:#042621;--accent:#67B345;--text:#f3fde5;--muted:#9eb79a;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{min-height:100vh;background:#000;color:var(--text);font-family:'Poppins',sans-serif;}
+.container{width:92%;max-width:1100px;margin:auto;padding:60px 0;}
+header{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:40px;}
+header img{width:72px;height:auto;}
+header h1{font-size:2.8rem;}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}
+.card{background:var(--card);border:1px solid rgba(103,179,69,0.14);border-radius:28px;overflow:hidden;box-shadow:0 25px 70px rgba(0,0,0,0.4);}
+.card iframe{width:100%;height:280px;border:0;}
+.card-content{padding:28px;}
+.card-content h2{margin-bottom:16px;color:var(--accent);}
+.card-content p{line-height:1.8;color:var(--muted);}
+.back{display:inline-flex;margin-top:24px;padding:14px 26px;border-radius:999px;background:var(--accent);color:#000;font-weight:700;text-decoration:none;}
+@media(max-width:860px){.grid{grid-template-columns:1fr;}.card iframe{height:220px;}}
+@media(max-width:600px){header h1{font-size:2rem;}}
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="images/logo.svg" alt="EV Connect 2026">
+        <div>
+            <h1>Media & Past Event Coverage</h1>
+            <p>Watch event snippets, press moments, and media coverage from EV Connect rallies.</p>
+        </div>
+    </header>
+    <div class="grid">
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <div class="card-content">
+                <h2>EV Rally Kickoff</h2>
+                <p>Watch the launch of our previous rally as hundreds of electric vehicles gather and flag off together.</p>
+            </div>
+        </div>
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/3GwjfUFyY6M" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <div class="card-content">
+                <h2>Creator Moments</h2>
+                <p>An inside look at creator reactions, media interviews, and EV community engagement on the road.</p>
+            </div>
+        </div>
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/V-_O7nl0Ii0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <div class="card-content">
+                <h2>Brand Showcases</h2>
+                <p>See the electric vehicle brands and charging partners who powered last year’s EV Connect event.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>Want More?</h2>
+                <p>Return to the homepage to register, download the brochure, and explore the event experience.</p>
+                <a class="back" href="/">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

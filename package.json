@@ -1,0 +1,29 @@
+{
+  "name": "ev-connect-2026",
+  "version": "1.0.0",
+  "description": "Landing page for EV Connect 2026 Rally in Indore",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "ev",
+    "rally",
+    "indore",
+    "landing-page"
+  ],
+  "author": "EV Urjaa & 4K Media Marketing",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "compression": "^1.7.4",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

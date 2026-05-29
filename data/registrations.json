@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Test User",
+    "email": "test@example.com",
+    "phone": "1234567890",
+    "vehicle": "electric-bike",
+    "organization": "TestOrg",
+    "submittedAt": "2026-05-29T07:03:20.209Z"
+  }
+]
