@@ -1,2382 +1,2023 @@
-__DELETE_FILE__
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!DOCTYPE html>
+<html lang="en">
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <!-- ===== SEO: Primary Meta Tags ===== -->
+    <title>EV Connect 2026 | India's Biggest Electric Vehicle Rally – June 14, Indore</title>
+    <meta name="description" content="EV Connect 2026 is India's premier electric vehicle rally and EV showcase event on June 14, 2026 at Vijay Nagar Playground, Indore. Join 500+ EV participants, 30+ creators, and 25+ brands for India's most exciting EV community event.">
+    <meta name="keywords" content="EV Connect 2026, electric vehicle rally Indore, EV event India 2026, EV rally Indore, electric car rally, EV showcase, EV community event, India EV event, electric mobility India, EV Urjaa, 4K Media Marketing, EV participants Indore, sustainable mobility India, green energy rally">
+    <meta name="author" content="EV Urjaa & 4K Media Marketing">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://evconnect2026.in/">
 
-<style>
+    <!-- ===== SEO: Open Graph (Facebook, WhatsApp, LinkedIn) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://evconnect2026.in/">
+    <meta property="og:title" content="EV Connect 2026 | India's Biggest Electric Vehicle Rally – June 14, Indore">
+    <meta property="og:description" content="Join 500+ EVs, 30+ creators and 25+ brands at India's most exciting electric mobility event. June 14, 2026 | Vijay Nagar Playground, Indore.">
+    <meta property="og:image" content="https://evconnect2026.in/images/og-banner.jpg">
+    <meta property="og:site_name" content="EV Connect 2026">
+    <meta property="og:locale" content="en_IN">
 
-:root{
-    --primary:#67b345;
-    --secondary:#042621;
-    --dark:#000000;
-    --card:#042621;
-    --light:#ffffff;
-    --text:#dbe8cb;
-    --border:rgba(103,179,69,0.12);
-}
+    <!-- ===== SEO: Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EV Connect 2026 | India's Biggest Electric Vehicle Rally">
+    <meta name="twitter:description" content="June 14, 2026 | Vijay Nagar Playground, Indore | 500+ EVs · 30+ Creators · 25+ Brands">
+    <meta name="twitter:image" content="https://evconnect2026.in/images/og-banner.jpg">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
-
-body{
-    background:var(--dark);
-    color:white;
-    font-family:'Poppins',sans-serif;
-    overflow-x:hidden;
-}
-
-h1,h2,h3,h4{
-    font-family:'Orbitron',sans-serif;
-}
-
-.container{
-    width:90%;
-    max-width:1380px;
-    margin:auto;
-}
-
-section{
-    padding:120px 0;
-    position:relative;
-}
-
-img{
-    max-width:100%;
-}
-
-a{
-    text-decoration:none;
-}
-
-body::before{
-    content:'';
-    position:fixed;
-    inset:0;
-    background:
-    radial-gradient(circle at top left, rgba(103,179,69,0.12), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(4,38,33,0.12), transparent 30%);
-    pointer-events:none;
-    z-index:-1;
-}
-
-/* ================= NAVBAR ================= */
-
-.navbar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:999;
-    padding:20px 0;
-    backdrop-filter:blur(18px);
-    background:rgba(0,0,0,0.35);
-    border-bottom:1px solid rgba(255,255,255,0.05);
-    transition:0.4s ease;
-}
-
-.navbar.scrolled{
-    background:#000000;
-    padding:16px 0;
-}
-
-.nav-wrapper{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    color:white;
-    font-weight:700;
-    font-size:1.4rem;
-}
-
-.logo-icon{
-    width:52px;
-    height:52px;
-    border-radius:18px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:linear-gradient(135deg,var(--primary),rgba(103,179,69,0.7));
-    color:black;
-    font-size:1.2rem;
-    box-shadow:0 0 35px rgba(103,179,69,0.35);
-}
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:34px;
-}
-
-.nav-links a{
-    color:white;
-    font-size:0.95rem;
-    transition:0.3s;
-}
-
-.nav-links a:hover{
-    color:var(--primary);
-}
-
-.nav-btn{
-    padding:14px 26px;
-    border-radius:50px;
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
-    color:black !important;
-    font-weight:700;
-    box-shadow:0 0 30px rgba(0,255,174,0.3);
-}
-
-/* ================= HERO ================= */
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    overflow:hidden;
-}
-
-.hero video.hero-bg{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:-3;
-}
-
-.hero-overlay{
-    position:absolute;
-    inset:0;
-    background:
-    linear-gradient(
-        135deg,
-        rgba(0,0,0,0.92),
-        rgba(0,0,0,0.55),
-        rgba(103,179,69,0.12)
-    );
-    z-index:-2;
-}
-
-.grid-overlay{
-    position:absolute;
-    inset:0;
-    background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-    background-size:60px 60px;
-    animation:gridMove 15s linear infinite;
-    z-index:-1;
-}
-
-@keyframes gridMove{
-    from{
-        transform:translateY(0);
+    <!-- ===== SEO: Structured Data (Event Schema) ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "EV Connect 2026",
+        "description": "India's premier electric vehicle rally and EV showcase event featuring 500+ EV participants, 30+ creators, and 25+ brands driving the future of electric mobility.",
+        "startDate": "2026-06-14T07:00:00+05:30",
+        "endDate": "2026-06-14T14:00:00+05:30",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "Vijay Nagar Playground",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Near NRK Business Park, Vijay Nagar",
+                "addressLocality": "Indore",
+                "addressRegion": "Madhya Pradesh",
+                "postalCode": "452010",
+                "addressCountry": "IN"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "EV Urjaa & 4K Media Marketing",
+            "url": "https://evconnect2026.in"
+        },
+        "url": "https://evconnect2026.in",
+        "image": "https://evconnect2026.in/images/og-banner.jpg"
     }
-    to{
-        transform:translateY(60px);
-    }
-}
-
-.hero-content{
-    max-width:900px;
-}
-
-.hero-badge{
-    display:inline-flex;
-    align-items:center;
-    gap:12px;
-    padding:14px 24px;
-    border-radius:50px;
-    background:rgba(255,255,255,0.07);
-    border:1px solid var(--border);
-    margin-bottom:28px;
-    backdrop-filter:blur(12px);
-}
-
-.live-dot{
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    background:var(--primary);
-    animation:pulse 1s infinite;
-}
-
-@keyframes pulse{
-    0%{opacity:0.4;}
-    50%{opacity:1;}
-    100%{opacity:0.4;}
-}
-
-.hero-title{
-    font-size:6.5rem;
-    line-height:0.92;
-    margin-bottom:30px;
-}
-
-.hero-title span{
-    color:var(--primary);
-    text-shadow:0 0 35px rgba(0,255,174,0.7);
-}
-
-.hero-subtitle{
-    max-width:760px;
-    color:var(--text);
-    font-size:1.08rem;
-    line-height:1.9;
-    margin-bottom:45px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-bottom:55px;
-}
-
-.btn{
-    padding:18px 34px;
-    border-radius:50px;
-    font-weight:700;
-    transition:0.4s ease;
-}
-
-.btn-primary{
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
-    color:black;
-    box-shadow:0 0 35px rgba(0,255,174,0.35);
-}
-
-.btn-primary:hover{
-    transform:translateY(-6px);
-}
-
-.btn-secondary{
-    background:rgba(255,255,255,0.06);
-    border:1px solid var(--border);
-    color:white;
-}
-
-.btn-secondary:hover{
-    transform:translateY(-6px);
-    background:rgba(255,255,255,0.1);
-}
-
-.hero-stats{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:22px;
-}
-
-.stat-card{
-    padding:28px;
-    border-radius:30px;
-    background:rgba(255,255,255,0.05);
-    border:1px solid var(--border);
-    backdrop-filter:blur(16px);
-    transition:0.4s ease;
-}
-
-.stat-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 40px rgba(0,255,174,0.12);
-}
-
-.stat-card h2{
-    color:var(--primary);
-    font-size:2.3rem;
-    margin-bottom:10px;
-}
-
-.stat-card p{
-    color:var(--text);
-}
-
-/* ================= SECTION COMMON ================= */
-
-.section-header{
-    text-align:center;
-    max-width:850px;
-    margin:auto auto 75px;
-}
-
-.section-chip{
-    display:inline-block;
-    padding:12px 24px;
-    border-radius:50px;
-    background:rgba(255,255,255,0.06);
-    border:1px solid var(--border);
-    color:var(--primary);
-    margin-bottom:25px;
-    letter-spacing:1px;
-}
-
-.section-header h2{
-    font-size:4rem;
-    margin-bottom:22px;
-}
-
-.section-header p{
-    color:var(--text);
-    line-height:1.9;
-}
-
-/* ================= EXPERIENCE ================= */
-
-.experience-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
-
-.exp-card{
-    position:relative;
-    overflow:hidden;
-    border-radius:32px;
-    min-height:420px;
-    transition:0.5s ease;
-}
-
-.exp-card img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.exp-overlay{
-    position:absolute;
-    inset:0;
-    padding:35px;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-    background:
-    linear-gradient(
-        to top,
-        rgba(0,0,0,0.92),
-        rgba(0,0,0,0.2)
-    );
-}
-
-.exp-overlay h3{
-    margin-bottom:14px;
-    font-size:1.5rem;
-}
-
-.exp-overlay p{
-    color:#d7deeb;
-    line-height:1.8;
-}
-
-.exp-card:hover{
-    transform:translateY(-12px);
-}
-
-/* ================= HIGHLIGHTS ================= */
-
-.highlight-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:28px;
-}
-
-.highlight-card{
-    padding:40px;
-    border-radius:32px;
-    background:rgba(255,255,255,0.05);
-    border:1px solid var(--border);
-    transition:0.4s ease;
-}
-
-.highlight-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 40px rgba(0,255,174,0.12);
-}
-
-.highlight-icon{
-    width:82px;
-    height:82px;
-    border-radius:24px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:linear-gradient(
-        135deg,
-        rgba(0,255,174,0.18),
-        rgba(0,195,255,0.18)
-    );
-    margin-bottom:26px;
-}
-
-.highlight-icon i{
-    color:var(--primary);
-    font-size:2rem;
-}
-
-.highlight-card h3{
-    margin-bottom:15px;
-}
-
-.highlight-card p{
-    color:var(--text);
-    line-height:1.9;
-}
-
-/* ================= SCHEDULE ================= */
-
-.schedule-wrapper{
-    display:grid;
-    grid-template-columns:0.9fr 1.1fr;
-    gap:60px;
-    align-items:center;
-}
-
-.schedule-image{
-    border-radius:35px;
-    overflow:hidden;
-    border:1px solid var(--border);
-    min-height:650px;
-}
-
-.schedule-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.timeline{
-    display:flex;
-    flex-direction:column;
-    gap:24px;
-}
-
-.timeline-item{
-    display:flex;
-    gap:22px;
-    padding:28px;
-    border-radius:28px;
-    background:rgba(255,255,255,0.05);
-    border:1px solid var(--border);
-}
-
-.timeline-time{
-    min-width:110px;
-    color:var(--primary);
-    font-weight:700;
-    font-size:1.1rem;
-}
-
-.timeline-content h3{
-    margin-bottom:8px;
-}
-
-.timeline-content p{
-    color:var(--text);
-    line-height:1.8;
-}
-
-/* ================= SPONSORS ================= */
-
-.sponsor-section{
-    background:#07111d;
-}
-
-.logo-slider{
-    overflow:hidden;
-    margin-top:60px;
-}
-
-.logo-track{
-    display:flex;
-    gap:30px;
-    width:max-content;
-    animation:scroll 26s linear infinite;
-}
-
-@keyframes scroll{
-    from{
-        transform:translateX(0);
-    }
-    to{
-        transform:translateX(-50%);
-    }
-}
-
-.logo-box{
-    width:240px;
-    height:130px;
-    background:white;
-    border-radius:28px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:24px;
-}
-
-.logo-box img{
-    max-width:100%;
-    max-height:70px;
-    object-fit:contain;
-}
-
-/* ================= LOCATION ================= */
-
-.location-wrapper{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.location-map{
-    border-radius:35px;
-    overflow:hidden;
-    border:1px solid var(--border);
-    min-height:520px;
-}
-
-.location-map iframe{
-    width:100%;
-    height:100%;
-    border:0;
-}
-
-.location-content h2{
-    font-size:4rem;
-    margin-bottom:25px;
-}
-
-.location-content p{
-    color:var(--text);
-    line-height:1.9;
-    margin-bottom:25px;
-}
-
-.location-points{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-}
-
-.location-points div{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    padding:20px;
-    border-radius:22px;
-    background:rgba(255,255,255,0.05);
-    border:1px solid var(--border);
-}
-
-.location-points i{
-    color:var(--primary);
-    font-size:1.2rem;
-}
-
-/* ================= REGISTER ================= */
-
-.register-box{
-    padding:80px;
-    border-radius:40px;
-    background:
-    linear-gradient(
-        135deg,
-        rgba(0,255,174,0.12),
-        rgba(0,195,255,0.12)
-    );
-    border:1px solid var(--border);
-}
-
-.register-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
-
-.register-left h2{
-    font-size:4rem;
-    margin-bottom:25px;
-}
-
-.register-left p{
-    color:var(--text);
-    line-height:1.9;
-    margin-bottom:35px;
-}
-
-.register-points{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:18px;
-}
-
-.register-points div{
-    padding:20px;
-    border-radius:20px;
-    background:rgba(255,255,255,0.06);
-    border:1px solid rgba(255,255,255,0.08);
-}
-
-.register-points i{
-    color:var(--primary);
-    margin-right:10px;
-}
-
-.register-form{
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.08);
-    border-radius:35px;
-    padding:45px;
-    backdrop-filter:blur(12px);
-}
-
-.form-group{
-    margin-bottom:20px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-    width:100%;
-    padding:18px;
-    border:none;
-    border-radius:18px;
-    background:rgba(255,255,255,0.08);
-    color:white;
-    outline:none;
-    font-family:'Poppins',sans-serif;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder{
-    color:#c9d4e6;
-}
-
-.submit-btn{
-    width:100%;
-    padding:18px;
-    border:none;
-    border-radius:50px;
-    background:linear-gradient(135deg,var(--primary),var(--secondary));
-    color:black;
-    font-weight:700;
-    cursor:pointer;
-    font-size:1rem;
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-    background:#02050d;
-    padding:90px 0 40px;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:40px;
-}
-
-.footer-grid h3{
-    margin-bottom:22px;
-}
-
-.footer-grid p,
-.footer-grid a{
-    color:var(--text);
-    line-height:2;
-}
-
-.footer-bottom{
-    margin-top:60px;
-    text-align:center;
-    color:#728097;
-}
-
-/* ================= MOBILE ================= */
-
-@media(max-width:1100px){
-
-    .schedule-wrapper,
-    .location-wrapper,
-    .register-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero-title{
-        font-size:4.5rem;
-    }
-
-    .hero-stats{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-}
-
-@media(max-width:768px){
-
-    .nav-links{
-        display:none;
-    }
-
-    .hero-title,
-    .section-header h2,
-    .location-content h2,
-    .register-left h2{
-        font-size:2.8rem;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-    }
-
-    .hero-stats,
-    .register-points{
-        grid-template-columns:1fr;
-    }
-
-    .register-box{
-        padding:50px 25px;
-    }
-
-}
-
-</style>
+    </script>
+
+    <!-- ===== Fonts & Icons ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <style>
+
+        /* ============================================================
+           CSS CUSTOM PROPERTIES
+        ============================================================ */
+        :root {
+            --primary: #67b345;
+            --secondary: #042621;
+            --dark: #000000;
+            --card: #042621;
+            --light: #ffffff;
+            --text: #dbe8cb;
+            --border: rgba(103, 179, 69, 0.12);
+            --navbar-height: 80px;
+        }
+
+        /* ============================================================
+           RESET & BASE
+        ============================================================ */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--dark);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1380px;
+            margin: auto;
+        }
+
+        section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(circle at top left, rgba(103, 179, 69, 0.12), transparent 30%),
+                radial-gradient(circle at bottom right, rgba(4, 38, 33, 0.12), transparent 30%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* ============================================================
+           NAVBAR
+        ============================================================ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            padding: 16px 0;
+            backdrop-filter: blur(18px);
+            background: rgba(0, 0, 0, 0.35);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: background 0.4s ease, padding 0.4s ease;
+        }
+
+        .navbar.scrolled {
+            background: #000000;
+            padding: 12px 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.4rem;
+            z-index: 10;
+        }
+
+        .logo-img {
+            height: 28px;
+            width: 90%;
+            padding-left: 5px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 34px;
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-btn {
+            padding: 12px 24px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: black !important;
+            font-weight: 700;
+            box-shadow: 0 0 30px rgba(103, 179, 69, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 40px rgba(103, 179, 69, 0.5);
+        }
+
+        /* --- Hamburger Button --- */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            cursor: pointer;
+            z-index: 1001;
+            flex-shrink: 0;
+            transition: background 0.3s ease;
+        }
+
+        .mobile-menu-btn:hover {
+            background: rgba(103, 179, 69, 0.15);
+            border-color: rgba(103, 179, 69, 0.3);
+        }
+
+        .hamburger-line {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: #fff;
+            border-radius: 2px;
+            transition: transform 0.35s ease, opacity 0.35s ease, width 0.35s ease;
+            transform-origin: center;
+        }
+
+        /* Animated X state */
+        .mobile-menu-btn.open .hamburger-line:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .mobile-menu-btn.open .hamburger-line:nth-child(2) {
+            opacity: 0;
+            width: 0;
+        }
+
+        .mobile-menu-btn.open .hamburger-line:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* --- Mobile Dropdown Nav --- */
+        .mobile-nav {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.97);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+        }
+
+        .mobile-nav.active {
+            max-height: 400px;
+            padding: 12px 0;
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .mobile-nav a {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 14px 24px;
+            transition: background 0.25s, color 0.25s;
+            border-radius: 8px;
+            margin: 0 8px;
+        }
+
+        .mobile-nav a:hover {
+            background: rgba(103, 179, 69, 0.12);
+            color: var(--primary);
+        }
+
+        .mobile-nav .mobile-register-btn {
+            margin: 8px 16px 4px;
+            padding: 14px 24px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: black !important;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        /* ============================================================
+           HERO SECTION
+        ============================================================ */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+            display: flex;
+            align-items: center;
+            padding: calc(var(--navbar-height) + 16px) 0 24px;
+            background: #030712;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;   /* inside isolation context — base layer */
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(115deg,
+                rgba(0, 0, 0, 0.90),
+                rgba(0, 0, 0, 0.55),
+                rgba(103, 179, 69, 0.10));
+            z-index: 1;   /* above video */
+        }
+
+        /* Mobile bg video hidden by default on desktop */
+        .hero-mobile-bg-video {
+            display: none;
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        /* Everything inside hero-wrapper must be above overlay */
+        .hero-wrapper,
+        .hero-light {
+            position: relative;
+            z-index: 2;
+        }
+
+        .grid-overlay {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 70px 70px;
+            z-index: 1;
+            animation: gridMove 18s linear infinite;
+        }
+
+        @keyframes gridMove {
+            from { transform: translateY(0); }
+            to   { transform: translateY(70px); }
+        }
+
+        .hero-light {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            filter: blur(130px);
+            opacity: 0.18;
+            z-index: 1;
+        }
+
+        .light-1 { background: #00ffae; top: -100px; left: -120px; }
+        .light-2 { background: #00c3ff; right: -120px; bottom: -120px; }
+
+        .hero-wrapper {
+            display: grid;
+            grid-template-columns: 1.1fr 0.7fr;
+            gap: 50px;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* --- Powered By Row (sponsor header) --- */
+        .sponsor-header-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .presented-label {
+            display: block;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            color: #00ffae;
+            margin-bottom: 7px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .presented-card {
+            width: 170px;
+            height: 68px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            box-shadow: 0 0 30px rgba(0, 255, 174, 0.08);
+        }
+
+        .presented-card img {
+            max-width: 100%;
+            max-height: 42px;
+            object-fit: contain;
+        }
+
+        .copowered-label {
+            display: block;
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+            color: #9fb4cc;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+        }
+
+        .copowered-logos {
+            display: flex;
+            gap: 8px;
+        }
+
+        .copowered-logo {
+            width: 72px;
+            height: 46px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 7px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .copowered-logo img {
+            max-width: 100%;
+            max-height: 24px;
+            object-fit: contain;
+        }
+
+        /* --- Hero Badge --- */
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 18px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 16px;
+            backdrop-filter: blur(12px);
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #00ffae;
+            flex-shrink: 0;
+            animation: pulse 1.4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50%       { opacity: 1;   transform: scale(1.2); }
+        }
+
+        /* --- Hero Title & Subtitle --- */
+        .hero-title {
+            font-size: clamp(2.8rem, 5.5vw, 5.5rem);
+            line-height: 0.93;
+            margin-bottom: 18px;
+            color: #fff;
+        }
+
+        .hero-title span {
+            color: #00ffae;
+            text-shadow: 0 0 35px rgba(0, 255, 174, 0.6);
+        }
+
+        .hero-subtitle {
+            color: #c7d2e0;
+            line-height: 1.75;
+            font-size: 0.93rem;
+            margin-bottom: 24px;
+            max-width: 620px;
+        }
+
+        /* --- Buttons --- */
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 28px;
+        }
+
+        .btn {
+            padding: 13px 26px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.3s;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #00ffae, #00c3ff);
+            color: black;
+            box-shadow: 0 0 30px rgba(0, 255, 174, 0.35);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 50px rgba(0, 255, 174, 0.5);
+        }
+
+        .btn-secondary {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.09);
+            transform: translateY(-4px);
+        }
+
+        /* --- Stats Grid --- */
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        .stat-card {
+            padding: 16px 14px;
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 30px rgba(0, 255, 174, 0.12);
+        }
+
+        .stat-card h2 {
+            color: #00ffae;
+            font-size: clamp(1.4rem, 2vw, 1.9rem);
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            color: #c4d0de;
+            font-size: 0.82rem;
+            line-height: 1.4;
+        }
+
+        /* --- Mobile Video Mockup (desktop right column) --- */
+        .hero-mobile-preview {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .mobile-frame {
+            width: 320px;
+            height: 600px;
+            background: #0a0f18;
+            border-radius: 38px;
+            padding: 12px;
+            position: relative;
+            border: 2px solid rgba(255, 255, 255, 0.08);
+            box-shadow:
+                0 0 70px rgba(0, 255, 174, 0.12),
+                inset 0 0 16px rgba(255, 255, 255, 0.03);
+            animation: floatPhone 5s ease-in-out infinite;
+        }
+
+        @keyframes floatPhone {
+            0%, 100% { transform: translateY(0); }
+            50%       { transform: translateY(-10px); }
+        }
+
+        .mobile-notch {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 18px;
+            background: black;
+            border-radius: 20px;
+            z-index: 3;
+        }
+
+        .mobile-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 28px;
+        }
+
+        /* ============================================================
+           SECTION COMMON STYLES
+        ============================================================ */
+        .section-header {
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto 70px;
+        }
+
+        .section-chip {
+            display: inline-block;
+            padding: 10px 22px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border);
+            color: var(--primary);
+            margin-bottom: 22px;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2.2rem, 4vw, 4rem);
+            margin-bottom: 20px;
+        }
+
+        .section-header p {
+            color: var(--text);
+            line-height: 1.9;
+        }
+
+        /* ============================================================
+           EXPERIENCE SECTION
+        ============================================================ */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .exp-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 32px;
+            min-height: 420px;
+            transition: transform 0.5s ease;
+        }
+
+        .exp-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            inset: 0;
+        }
+
+        .exp-overlay {
+            position: absolute;
+            inset: 0;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: linear-gradient(to top, rgba(0,0,0,0.92), rgba(0,0,0,0.2));
+        }
+
+        .exp-overlay h3 { margin-bottom: 12px; font-size: 1.4rem; }
+        .exp-overlay p  { color: #d7deeb; line-height: 1.8; }
+        .exp-card:hover { transform: translateY(-12px); }
+
+        /* ============================================================
+           HIGHLIGHTS SECTION
+        ============================================================ */
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+        }
+
+        .highlight-card {
+            padding: 38px;
+            border-radius: 32px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 40px rgba(0, 255, 174, 0.12);
+        }
+
+        .highlight-icon {
+            width: 78px;
+            height: 78px;
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(0,255,174,0.15), rgba(0,195,255,0.15));
+            margin-bottom: 24px;
+        }
+
+        .highlight-icon i { color: var(--primary); font-size: 1.9rem; }
+        .highlight-card h3 { margin-bottom: 14px; }
+        .highlight-card p  { color: var(--text); line-height: 1.9; }
+
+        /* ============================================================
+           SCHEDULE SECTION
+        ============================================================ */
+        .schedule-wrapper {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .schedule-image {
+            border-radius: 35px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            height: 100%;
+            min-height: 620px;
+        }
+
+        .schedule-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 22px;
+            padding: 26px;
+            border-radius: 26px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        .timeline-time {
+            min-width: 100px;
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .timeline-content h3 { margin-bottom: 8px; font-size: 1rem; }
+        .timeline-content p  { color: var(--text); line-height: 1.8; font-size: 0.9rem; }
+
+        /* ============================================================
+           PREVIOUS EVENTS SECTION
+        ============================================================ */
+        .previous-events {
+            position: relative;
+            padding: 120px 0;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at top left, rgba(0,255,163,0.08), transparent 30%),
+                radial-gradient(circle at bottom right, rgba(0,170,255,0.08), transparent 30%),
+                #050816;
+        }
+
+        .previous-events::before {
+            content: "";
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(0,255,163,0.12), transparent 70%);
+            top: -300px;
+            right: -250px;
+            filter: blur(40px);
+            z-index: 0;
+        }
+
+        .previous-events .container { position: relative; z-index: 2; }
+
+        .previous-events .section-header { margin-bottom: 70px; }
+
+        .previous-events .section-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 22px;
+            border-radius: 100px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            color: #00ffa3;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .previous-events .section-header h2 {
+            font-size: clamp(2.4rem, 4vw, 4.8rem);
+            line-height: 1.1;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .previous-events .section-intro {
+            max-width: 760px;
+            margin: auto;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: rgba(255,255,255,0.72);
+        }
+
+        .previous-media-layout {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .gallery-column {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .gallery-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 28px;
+        }
+
+        .gallery-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+            min-height: 280px;
+            background: #111827;
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.04);
+            transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+        }
+
+        .gallery-large { min-height: 520px; }
+
+        .gallery-card:hover {
+            transform: translateY(-12px) scale(1.01);
+            border-color: rgba(0,255,163,0.35);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.55), 0 0 40px rgba(0,255,163,0.15);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            inset: 0;
+            transition: transform 0.8s ease;
+        }
+
+        .gallery-card:hover img { transform: scale(1.08); }
+
+        .gallery-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.82) 5%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.05) 100%);
+        }
+
+        .gallery-card::before {
+            content: "";
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: rgba(0,255,163,0.18);
+            filter: blur(70px);
+            top: -40px;
+            right: -40px;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .gallery-card:hover::before { opacity: 1; }
+
+        .gallery-meta {
+            position: absolute;
+            left: 28px;
+            bottom: 28px;
+            z-index: 3;
+        }
+
+        .gallery-meta h3 {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.45s ease;
+        }
+
+        .gallery-card:hover .gallery-meta h3 {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .video-column {
+            position: sticky;
+            top: 110px;
+        }
+
+        .video-header { margin-bottom: 28px; }
+
+        .video-header h2 {
+            font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+            line-height: 1.2;
+            color: #fff;
+            margin: 14px 0;
+        }
+
+        .video-header p { color: rgba(255,255,255,0.72); line-height: 1.8; }
+
+        .video-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+        }
+
+        .video-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 26px;
+            padding: 12px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(18px);
+            transition: all 0.45s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(0,255,163,0.4);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.45), 0 0 30px rgba(0,255,163,0.12);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 220px;
+            border: none;
+            border-radius: 16px;
+            display: block;
+        }
+
+        .video-card h4 {
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 14px 8px 4px;
+            letter-spacing: 0.4px;
+        }
+
+        /* ============================================================
+           SPONSORS SECTION
+        ============================================================ */
+        .sponsor-section {
+            background: #07111d;
+        }
+
+        .logo-slider {
+            overflow: hidden;
+            margin-top: 55px;
+        }
+
+        .logo-track {
+            display: flex;
+            gap: 28px;
+            width: max-content;
+            animation: scrollLogos 26s linear infinite;
+        }
+
+        @keyframes scrollLogos {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-50%); }
+        }
+
+        .logo-box {
+            width: 220px;
+            height: 120px;
+            background: white;
+            border-radius: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 22px;
+            flex-shrink: 0;
+        }
+
+        .logo-box img {
+            max-width: 100%;
+            max-height: 65px;
+            object-fit: contain;
+        }
+
+        /* ============================================================
+           LOCATION SECTION
+        ============================================================ */
+        .location-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .location-map {
+            border-radius: 35px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .location-map iframe {
+            width: 100%;
+            height: 520px;
+            border: 0;
+            display: block;
+        }
+
+        .location-content h2 {
+            font-size: clamp(2rem, 4vw, 3.8rem);
+            margin-bottom: 22px;
+        }
+
+        .location-content p {
+            color: var(--text);
+            line-height: 1.9;
+            margin-bottom: 24px;
+        }
+
+        .location-points {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .location-points div {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 18px 22px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border);
+        }
+
+        .location-points i { color: var(--primary); font-size: 1.1rem; flex-shrink: 0; }
+
+        /* ============================================================
+           REGISTER SECTION
+        ============================================================ */
+        .register-box {
+            padding: 70px;
+            border-radius: 40px;
+            background: linear-gradient(135deg, rgba(0,255,174,0.10), rgba(0,195,255,0.10));
+            border: 1px solid var(--border);
+        }
+
+        .register-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .register-left h2 {
+            font-size: clamp(2rem, 4vw, 3.8rem);
+            margin-bottom: 22px;
+        }
+
+        .register-left p {
+            color: var(--text);
+            line-height: 1.9;
+            margin-bottom: 32px;
+        }
+
+        .register-points {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .register-points div {
+            padding: 18px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.9rem;
+        }
+
+        .register-points i { color: var(--primary); margin-right: 10px; }
+
+        .register-form {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 32px;
+            padding: 40px;
+            backdrop-filter: blur(12px);
+        }
+
+        .form-group { margin-bottom: 18px; }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 16px 18px;
+            border: none;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.08);
+            color: white;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+            transition: background 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            background: rgba(255,255,255,0.12);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder { color: #c9d4e6; }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: black;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 40px rgba(103,179,69,0.4);
+        }
+
+        /* ============================================================
+           FOOTER
+        ============================================================ */
+        footer {
+            background: #02050d;
+            padding: 80px 0 36px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-grid h3 { margin-bottom: 20px; font-size: 1rem; }
+        .footer-grid p, .footer-grid a { color: var(--text); line-height: 2.2; font-size: 0.9rem; }
+        .footer-grid a:hover { color: var(--primary); }
+
+        .footer-bottom {
+            margin-top: 55px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            text-align: center;
+            color: #728097;
+            font-size: 0.88rem;
+        }
+
+        /* ============================================================
+           SCROLL REVEAL ANIMATION
+        ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(45px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================================
+           RESPONSIVE — TABLET  (≤1150px)
+        ============================================================ */
+        @media (max-width: 1150px) {
+
+            .hero-wrapper {
+                grid-template-columns: 1fr;
+                gap: 36px;
+            }
+
+            .hero-mobile-preview { margin-top: 0; }
+
+            .previous-media-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .video-column {
+                position: relative;
+                top: unset;
+            }
+
+            .schedule-wrapper,
+            .location-wrapper,
+            .register-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        /* ============================================================
+           RESPONSIVE — MOBILE  (≤768px)
+        ============================================================ */
+        @media (max-width: 768px) {
+
+            :root { --navbar-height: 64px; }
+
+            section { padding: 72px 0; }
+
+            /* Hamburger visible, desktop nav hidden */
+            .mobile-menu-btn { display: flex; }
+            .nav-links { display: none; }
+
+            /* ── HERO: full-screen with portrait video as background ── */
+            .hero {
+                height: 100svh;
+                min-height: 580px;
+                padding-top: var(--navbar-height);
+                padding-bottom: 0;
+                display: flex;
+                align-items: flex-end;
+                overflow: hidden;
+                /* Remove background — video provides it */
+                background: transparent;
+                /* Establish own stacking context WITHOUT clipping video */
+                isolation: isolate;
+            }
+
+            /* Hide the landscape desktop video on mobile */
+            .hero-bg { display: none; }
+
+            /* Portrait video — absolute inside hero, above z-index baseline */
+            .hero-mobile-bg-video {
+                display: block !important;
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center top;
+                z-index: 0;   /* positive — sits inside hero's isolation layer */
+            }
+
+            /* Grid overlay above video overlay */
+            /* Hide decorative lights on mobile — keep absolute so no space taken */
+            .hero-light {
+                display: none;
+            }
+
+            /* Hero content fills full width, anchored toward bottom */
+            .hero-wrapper {
+                position: relative;
+                z-index: 2;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 0;
+                padding-bottom: 40px;
+                align-items: flex-end;
+                width: 100%;
+            }
+
+            .hero-content {
+                width: 100%;
+                min-width: 0;
+            }
+
+            /* Hide the phone mockup entirely on mobile */
+            .hero-mobile-preview { display: none !important; }
+
+            /* Hide grid overlay on mobile — video should show clean */
+            .grid-overlay { display: none; }
+
+            /* Darker overlay so text is readable over video */
+            .hero-overlay {
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 0.97) 0%,
+                    rgba(0, 0, 0, 0.85) 35%,
+                    rgba(0, 0, 0, 0.55) 65%,
+                    rgba(0, 0, 0, 0.25) 100%
+                );
+                z-index: 1;
+            }
+
+            /* Add drop-shadow to title so it pops over video */
+            .hero-title {
+                font-size: clamp(2.4rem, 10vw, 3.4rem);
+                margin-bottom: 12px;
+                text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+            }
+
+            .hero-title span {
+                text-shadow: 0 0 35px rgba(0,255,174,0.7), 0 2px 20px rgba(0,0,0,0.8);
+            }
+
+            /* Compact sponsor row on mobile */
+            .sponsor-header-row {
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 14px;
+            }
+
+            .presented-card { width: 140px; height: 58px; padding: 10px; }
+            .presented-card img { max-height: 34px; }
+            .copowered-logo { width: 62px; height: 40px; }
+
+            .hero-badge {
+                padding: 7px 14px;
+                font-size: 0.72rem;
+                margin-bottom: 12px;
+                background: rgba(0, 0, 0, 0.35);
+                backdrop-filter: blur(8px);
+            }
+
+            .hero-subtitle {
+                font-size: 0.88rem;
+                line-height: 1.7;
+                margin-bottom: 20px;
+                text-shadow: 0 1px 10px rgba(0,0,0,0.55);
+            }
+
+            .hero-buttons {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+
+            .btn { padding: 11px 20px; font-size: 0.85rem; }
+
+            .hero-stats {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 8px;
+            }
+
+            .stat-card {
+                padding: 12px 10px;
+                border-radius: 14px;
+                background: rgba(0, 0, 0, 0.35);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255,255,255,0.10);
+            }
+            .stat-card h2 { font-size: 1.3rem; margin-bottom: 3px; }
+            .stat-card p  { font-size: 0.72rem; }
+
+            /* Schedule */
+            .schedule-image { min-height: 260px; }
+            .timeline-item { flex-direction: column; gap: 5px; }
+            .timeline-time  { min-width: auto; font-size: 0.88rem; }
+
+            /* Previous events */
+            .previous-events { padding: 72px 0; }
+            .gallery-grid-2  { grid-template-columns: 1fr; }
+            .gallery-large   { min-height: 340px; }
+            .gallery-card    { min-height: 220px; }
+            .video-card iframe { height: 195px; }
+            .gallery-meta h3   { font-size: 1.2rem; }
+
+            /* Location map */
+            .location-map iframe { height: 300px; }
+
+            /* Register */
+            .register-box   { padding: 32px 18px; }
+            .register-form  { padding: 24px 18px; }
+            .register-points { grid-template-columns: 1fr; }
+
+        }
+
+        /* ============================================================
+           RESPONSIVE — SMALL MOBILE  (≤480px)
+        ============================================================ */
+        @media (max-width: 480px) {
+
+            .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+
+            .stat-card h2 { font-size: 1.4rem; }
+            .stat-card p  { font-size: 0.76rem; }
+
+            .section-header h2 { font-size: 2rem; }
+
+            .hero-title { font-size: clamp(2.1rem, 9vw, 2.8rem); }
+
+            .mobile-frame { width: 210px; height: 430px; }
+
+        }
+
+        /* ============================================================
+           ACCESSIBILITY UTILITIES
+        ============================================================ */
+        .visually-hidden {
+            position: absolute;
+            width: 1px; height: 1px;
+            padding: 0; margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+    </style>
 
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-wrapper">
 
-<nav class="navbar" id="navbar">
-
-    <div class="container nav-wrapper">
-
-        <a href="#home" class="logo">
-
-            <!-- <div class="logo-icon">
-                <i class="fa-solid fa-bolt"></i>
-            </div> -->
-
-            <img src="images/logo.svg" alt="EV Connect 2026" class="logo-img" width="100" height="50">
-        </a>
-
-        <div class="nav-links">
-
-            <a href="#experience">Experience</a>
-            <a href="#highlights">Highlights</a>
-            <a href="#schedule">Schedule</a>
-            <a href="#location">Location</a>
-            <a href="#sponsors">Sponsors</a>
-
-            <a href="#register" class="nav-btn">
-                Register
+            <a href="#home" class="logo" aria-label="EV Connect 2026 - Home">
+                <img src="images/logo.svg" alt="EV Connect 2026 Logo" class="logo-img" width="100" height="46">
             </a>
 
+            <!-- Accessible hamburger with animated lines -->
+            <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Mobile dropdown nav -->
+            <div class="mobile-nav" id="mobileNav" role="menu">
+                <a href="#experience" role="menuitem">Experience</a>
+                <a href="#highlights"  role="menuitem">Highlights</a>
+                <a href="#schedule"    role="menuitem">Schedule</a>
+                <a href="#location"    role="menuitem">Location</a>
+                <a href="#sponsors"    role="menuitem">Sponsors</a>
+                <a href="#register" class="mobile-register-btn" role="menuitem">Register</a>
+            </div>
+
+            <!-- Desktop nav -->
+            <nav class="nav-links" aria-label="Desktop navigation">
+                <a href="#experience">Experience</a>
+                <a href="#highlights">Highlights</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#location">Location</a>
+                <a href="#sponsors">Sponsors</a>
+                <a href="#register" class="nav-btn">Register</a>
+            </nav>
+
         </div>
+    </nav>
 
-    </div>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home" aria-label="EV Connect 2026 – India's Biggest Electric Vehicle Rally">
 
-</nav>
-<!-- ================= HERO ================= -->
+        <!-- Landscape BG video (desktop) -->
+        <video autoplay muted loop playsinline preload="auto" class="hero-bg" aria-hidden="true">
+            <source src="videos/ev-connect-hero.mp4" type="video/mp4">
+        </video>
 
-<section class="hero" id="home">
+        <!-- Portrait BG video (mobile only — hidden on desktop via CSS) -->
+        <video autoplay muted loop playsinline preload="metadata"
+               class="hero-mobile-bg-video" id="mobileBgVideo" aria-hidden="true">
+            <source src="videos/ev-connect-portrait.mp4" type="video/mp4">
+        </video>
 
-    <!-- HERO BACKGROUND VIDEO -->
-    <video autoplay muted loop playsinline class="hero-bg">
-        <source src="videos/ev-connect-hero.mp4" type="video/mp4">
-    </video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="grid-overlay"  aria-hidden="true"></div>
 
-    <div class="hero-overlay"></div>
-    <div class="grid-overlay"></div>
+        <div class="hero-light light-1" aria-hidden="true"></div>
+        <div class="hero-light light-2" aria-hidden="true"></div>
 
-    <!-- FLOATING LIGHTS -->
-    <div class="hero-light light-1"></div>
-    <div class="hero-light light-2"></div>
+        <div class="container">
+            <div class="hero-wrapper">
 
-    <div class="container hero-wrapper">
+            <!-- LEFT: Main Content -->
+            <div class="hero-content">
 
-        <!-- LEFT CONTENT -->
-        <div class="hero-content">
-
-            <!-- PRESENTED BY -->
-            <div class="presented-by">
-
-                <span class="presented-label">
-                    PRESENTED BY
-                </span>
-
-                <div class="presented-card">
-
-                    <!-- Replace with sponsor logo -->
-                    <img src="images/sponsors/title-sponsor.png" alt="Title Sponsor">
-
-                </div>
-
-            </div>
-
-            <!-- BADGE -->
-            <div class="hero-badge">
-
-                <span class="live-dot"></span>
-
-                INDIA'S ELECTRIC MOBILITY MOVEMENT
-
-            </div>
-
-            <!-- TITLE -->
-            <h1 class="hero-title">
-                DRIVE THE
-                <span>FUTURE</span>
-            </h1>
-
-            <!-- SUBTITLE -->
-            <p class="hero-subtitle">
-
-                EV Connect 2026 is where electric mobility meets culture, innovation and community.
-
-                From EV rallies and creator coverage to startup networking, media visibility,
-                live EV showcases and sustainability awareness — this event is built to unite
-                India's growing EV ecosystem in one unforgettable experience.
-
-            </p>
-
-            <!-- BUTTONS -->
-            <div class="hero-buttons">
-
-                <a href="#register" class="btn btn-primary">
-                    Register For Rally
-                </a>
-
-                <a href="assets/ev-connect-2026-brochure.pdf" download class="btn btn-secondary">
-                    Download Brochure
-                </a>
-
-                <a href="#sponsors" class="btn btn-secondary">
-                    Become A Sponsor
-                </a>
-
-            </div>
-
-            <!-- STATS -->
-            <div class="hero-stats">
-
-                <div class="stat-card">
-                    <h2>500+</h2>
-                    <p>EV Participants</p>
-                </div>
-
-                <div class="stat-card">
-                    <h2>30+</h2>
-                    <p>Creators & Influencers</p>
-                </div>
-
-                <div class="stat-card">
-                    <h2>25+</h2>
-                    <p>Brands & Partners</p>
-                </div>
-
-                <div class="stat-card">
-                    <h2>100K+</h2>
-                    <p>Expected Reach</p>
-                </div>
-
-            </div>
-
-            <!-- SPONSOR LINE -->
-            <div class="hero-sponsor-strip">
-
-                <div class="sponsor-strip-title">
-                    CO-POWERED BY
-                </div>
-
-                <div class="sponsor-strip-logos">
-
-                    <div class="sponsor-mini">
-                        <img src="images/sponsors/copower1.png" alt="">
+                <!-- Powered By / Co-Powered By -->
+                <div class="sponsor-header-row">
+                    <div class="powered-block">
+                        <span class="presented-label">Powered By</span>
+                        <div class="presented-card">
+                            <img src="images/sponsors/title-sponsor.png" alt="Title Sponsor of EV Connect 2026">
+                        </div>
                     </div>
-
-                    <div class="sponsor-mini">
-                        <img src="images/sponsors/copower2.png" alt="">
+                    <div class="copowered-block">
+                        <span class="copowered-label">Co-Powered By</span>
+                        <div class="copowered-logos">
+                            <div class="copowered-logo">
+                                <img src="images/sponsors/copower1.png" alt="Co-Powered Sponsor 1">
+                            </div>
+                            <div class="copowered-logo">
+                                <img src="images/sponsors/copower2.png" alt="Co-Powered Sponsor 2">
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="sponsor-mini">
-                        <img src="images/sponsors/copower3.png" alt="">
-                    </div>
-
-                    <div class="sponsor-mini">
-                        <img src="images/sponsors/copower4.png" alt="">
-                    </div>
-
                 </div>
 
-            </div>
-
-        </div>
-
-        <!-- RIGHT MOBILE VIDEO -->
-        <div class="hero-mobile-preview">
-
-            <div class="mobile-frame">
-
-                <!-- CAMERA -->
-                <div class="mobile-notch"></div>
-
-                <!-- PHONE VIDEO -->
-                <video autoplay muted loop playsinline controls class="mobile-video">
-                    <source src="videos/ev-connect-portrait.mp4" type="video/mp4">
-                </video>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<style>
-
-/* =========================================
-   HERO SECTION
-========================================= */
-
-.hero{
-    min-height:100vh;
-    position:relative;
-    overflow:hidden;
-    display:flex;
-    align-items:center;
-    padding:140px 0 90px;
-    background:#030712;
-}
-
-.hero-bg{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:-5;
-}
-
-.hero-overlay{
-    position:absolute;
-    inset:0;
-    background:
-    linear-gradient(
-        115deg,
-        rgba(0,0,0,0.88),
-        rgba(0,0,0,0.55),
-        rgba(0,255,174,0.12)
-    );
-    z-index:-4;
-}
-
-.grid-overlay{
-    position:absolute;
-    inset:0;
-    background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-    background-size:70px 70px;
-    z-index:-3;
-    animation:gridMove 18s linear infinite;
-}
-
-@keyframes gridMove{
-    from{
-        transform:translateY(0);
-    }
-    to{
-        transform:translateY(70px);
-    }
-}
-
-.hero-light{
-    position:absolute;
-    width:400px;
-    height:400px;
-    border-radius:50%;
-    filter:blur(130px);
-    opacity:0.18;
-    z-index:-2;
-}
-
-.light-1{
-    background:#00ffae;
-    top:-100px;
-    left:-120px;
-}
-
-.light-2{
-    background:#00c3ff;
-    right:-120px;
-    bottom:-120px;
-}
-
-.hero-wrapper{
-    display:grid;
-    grid-template-columns:1.1fr 0.7fr;
-    gap:80px;
-    align-items:center;
-}
-
-/* =========================================
-   PRESENTED BY
-========================================= */
-
-.presented-by{
-    margin-bottom:28px;
-}
-
-.presented-label{
-    display:block;
-    font-size:0.8rem;
-    letter-spacing:2px;
-    color:#00ffae;
-    margin-bottom:12px;
-    font-weight:600;
-}
-
-.presented-card{
-    width:220px;
-    height:90px;
-    border-radius:24px;
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.08);
-    backdrop-filter:blur(18px);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:20px;
-    box-shadow:0 0 40px rgba(0,255,174,0.12);
-}
-
-.presented-card img{
-    max-width:100%;
-    max-height:55px;
-    object-fit:contain;
-}
-
-/* =========================================
-   HERO CONTENT
-========================================= */
-
-.hero-badge{
-    display:inline-flex;
-    align-items:center;
-    gap:12px;
-    padding:14px 22px;
-    border-radius:50px;
-    background:rgba(255,255,255,0.06);
-    border:1px solid rgba(255,255,255,0.08);
-    margin-bottom:30px;
-    backdrop-filter:blur(12px);
-}
-
-.live-dot{
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    background:#00ffae;
-    animation:pulse 1s infinite;
-}
-
-@keyframes pulse{
-    0%{opacity:0.4;}
-    50%{opacity:1;}
-    100%{opacity:0.4;}
-}
-
-.hero-title{
-    font-size:6rem;
-    line-height:0.95;
-    margin-bottom:30px;
-    color:#fff;
-}
-
-.hero-title span{
-    color:#00ffae;
-    text-shadow:0 0 35px rgba(0,255,174,0.6);
-}
-
-.hero-subtitle{
-    max-width:760px;
-    color:#c7d2e0;
-    line-height:1.9;
-    font-size:1.08rem;
-    margin-bottom:45px;
-}
-
-/* =========================================
-   BUTTONS
-========================================= */
-
-.hero-buttons{
-    display:flex;
-    gap:18px;
-    flex-wrap:wrap;
-    margin-bottom:55px;
-}
-
-.btn{
-    padding:18px 34px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:700;
-    transition:0.4s ease;
-}
-
-.btn-primary{
-    background:linear-gradient(135deg,#00ffae,#00c3ff);
-    color:black;
-    box-shadow:0 0 35px rgba(0,255,174,0.35);
-}
-
-.btn-primary:hover{
-    transform:translateY(-6px);
-}
-
-.btn-secondary{
-    border:1px solid rgba(255,255,255,0.1);
-    background:rgba(255,255,255,0.05);
-    color:white;
-}
-
-.btn-secondary:hover{
-    background:rgba(255,255,255,0.09);
-    transform:translateY(-6px);
-}
-
-/* =========================================
-   STATS
-========================================= */
-
-.hero-stats{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-    margin-bottom:40px;
-}
-
-.stat-card{
-    padding:26px;
-    border-radius:26px;
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.08);
-    backdrop-filter:blur(12px);
-    transition:0.4s;
-}
-
-.stat-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 35px rgba(0,255,174,0.12);
-}
-
-.stat-card h2{
-    color:#00ffae;
-    font-size:2.2rem;
-    margin-bottom:10px;
-}
-
-.stat-card p{
-    color:#c4d0de;
-}
-
-/* =========================================
-   SPONSOR STRIP
-========================================= */
-
-.hero-sponsor-strip{
-    margin-top:20px;
-}
-
-.sponsor-strip-title{
-    font-size:0.8rem;
-    letter-spacing:2px;
-    color:#9fb4cc;
-    margin-bottom:18px;
-}
-
-.sponsor-strip-logos{
-    display:flex;
-    gap:18px;
-    flex-wrap:wrap;
-}
-
-.sponsor-mini{
-    width:140px;
-    height:70px;
-    border-radius:20px;
-    background:rgba(255,255,255,0.07);
-    border:1px solid rgba(255,255,255,0.08);
-    backdrop-filter:blur(12px);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:16px;
-    transition:0.4s;
-}
-
-.sponsor-mini:hover{
-    transform:translateY(-6px);
-    box-shadow:0 0 30px rgba(0,255,174,0.12);
-}
-
-.sponsor-mini img{
-    max-width:100%;
-    max-height:40px;
-    object-fit:contain;
-}
-
-/* =========================================
-   MOBILE VIDEO MOCKUP
-========================================= */
-
-.hero-mobile-preview{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-}
-
-.mobile-frame{
-    width:320px;
-    height:640px;
-    background:#0a0f18;
-    border-radius:42px;
-    padding:14px;
-    position:relative;
-    border:2px solid rgba(255,255,255,0.08);
-    box-shadow:
-    0 0 80px rgba(0,255,174,0.12),
-    inset 0 0 20px rgba(255,255,255,0.03);
-    animation:floatPhone 5s ease-in-out infinite;
-}
-
-@keyframes floatPhone{
-    0%{
-        transform:translateY(0px);
-    }
-    50%{
-        transform:translateY(-12px);
-    }
-    100%{
-        transform:translateY(0px);
-    }
-}
-
-.mobile-notch{
-    position:absolute;
-    top:12px;
-    left:50%;
-    transform:translateX(-50%);
-    width:130px;
-    height:24px;
-    background:black;
-    border-radius:20px;
-    z-index:3;
-}
-
-.mobile-video{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius:32px;
-}
-
-/* =========================================
-   MOBILE RESPONSIVE
-========================================= */
-
-@media(max-width:1150px){
-
-    .hero-wrapper{
-        grid-template-columns:1fr;
-    }
-
-    .hero-mobile-preview{
-        margin-top:30px;
-    }
-
-}
-
-@media(max-width:768px){
-
-    .hero{
-        padding-top:120px;
-    }
-
-    .hero-title{
-        font-size:3.2rem;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-    }
-
-    .hero-stats{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .mobile-frame{
-        width:280px;
-        height:560px;
-    }
-    
-}
-</style>
-
-<!-- ================= EXPERIENCE ================= -->
-
-<section id="experience">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-chip">
-                EVENT EXPERIENCE
-            </div>
-
-            <h2>
-                What People Will Actually Experience
-            </h2>
-
-            <p>
-                EV Connect is designed to feel energetic, visual and immersive — not just another corporate event.
-            </p>
-
-        </div>
-
-        <div class="experience-grid">
-
-            <div class="exp-card">
-
-                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=2070&auto=format&fit=crop">
-
-                <div class="exp-overlay">
-
-                    <h3>Grand EV Rally</h3>
-
-                    <p>
-                        Electric cars, scooters, superbikes and commercial EVs rallying together through the city.
-                    </p>
-
+                <div class="hero-badge">
+                    <span class="live-dot" aria-hidden="true"></span>
+                    India's Electric Mobility Movement
                 </div>
 
-            </div>
+                <h1 class="hero-title">
+                    DRIVE THE <span>FUTURE</span>
+                </h1>
 
-            <div class="exp-card">
-
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop">
-
-                <div class="exp-overlay">
-
-                    <h3>Creators & Media</h3>
-
-                    <p>
-                        Live coverage, interviews, influencer collaborations and high-energy social content.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="exp-card">
-
-                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1883&auto=format&fit=crop">
-
-                <div class="exp-overlay">
-
-                    <h3>Networking & Showcase</h3>
-
-                    <p>
-                        Meet EV founders, charging companies, startups, investors and future mobility leaders.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= HIGHLIGHTS ================= -->
-
-<section id="highlights">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-chip">
-                EVENT HIGHLIGHTS
-            </div>
-
-            <h2>
-                Built For Participants & Sponsors
-            </h2>
-
-        </div>
-
-        <div class="highlight-grid">
-
-            <div class="highlight-card">
-
-                <div class="highlight-icon">
-                    <i class="fa-solid fa-camera"></i>
-                </div>
-
-                <h3>Media Coverage</h3>
-
-                <p>
-                    Local media, EV communities, automotive pages and digital publications covering the event.
+                <p class="hero-subtitle">
+                    EV Connect 2026 is where electric mobility meets culture, innovation and community.
+                    From EV rallies and creator coverage to startup networking, media visibility,
+                    live EV showcases and sustainability awareness — this event is built to unite
+                    India's growing EV ecosystem in one unforgettable experience.
+                    <strong> June 14, 2026 · Indore, Madhya Pradesh.</strong>
                 </p>
 
-            </div>
-
-            <div class="highlight-card">
-
-                <div class="highlight-icon">
-                    <i class="fa-solid fa-users"></i>
+                <div class="hero-buttons">
+                    <a href="#register" class="btn btn-primary">Register For Rally</a>
+                    <a href="#" id="brochureBtn" class="btn btn-secondary">Download Brochure</a>
+                    <a href="#sponsors"  class="btn btn-secondary">Become A Sponsor</a>
                 </div>
 
-                <h3>500+ EV Community</h3>
-
-                <p>
-                    EV owners, enthusiasts, startups, students, volunteers and sustainability advocates.
-                </p>
-
-            </div>
-
-            <div class="highlight-card">
-
-                <div class="highlight-icon">
-                    <i class="fa-solid fa-bullhorn"></i>
-                </div>
-
-                <h3>30+ Influencers</h3>
-
-                <p>
-                    Influencers and creators generating social reach before, during and after the rally.
-                </p>
-
-            </div>
-
-            <div class="highlight-card">
-
-                <div class="highlight-icon">
-                    <i class="fa-solid fa-microchip"></i>
-                </div>
-
-                <h3>Industry Leaders</h3>
-
-                <p>
-                    EV startups, charging companies and mobility innovators connecting in one ecosystem.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= PREVIOUS EVENT HIGHLIGHTS ================= -->
-
-<section id="previous-events" class="previous-events">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-chip">
-                PREVIOUS EVENT
-            </div>
-
-            <h2>
-                Memories From Our Last Rally
-            </h2>
-
-            <p class="section-intro">
-                Highlights from our previous EV event — replace these sample images with your original rally photos once available.
-            </p>
-
-        </div>
-
-        <div class="previous-media-layout">
-
-            <div class="gallery-column">
-
-                <article class="gallery-card gallery-large">
-
-                    <img src="images/previous-events/prev-1.jpeg" alt="Electric mobility rally">
-
-                    <div class="gallery-meta">
-                        <h3>Rally Energy</h3>
-                        
+                <div class="hero-stats" aria-label="Event key statistics">
+                    <div class="stat-card">
+                        <h2>500+</h2>
+                        <p>EV Participants</p>
                     </div>
+                    <div class="stat-card">
+                        <h2>30+</h2>
+                        <p>Creators &amp; Influencers</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>25+</h2>
+                        <p>Brands &amp; Partners</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>100K+</h2>
+                        <p>Expected Reach</p>
+                    </div>
+                </div>
 
+            </div>
+
+            <!-- RIGHT: Mobile Video Mockup -->
+            <div class="hero-mobile-preview" aria-hidden="true">
+                <div class="mobile-frame">
+                    <div class="mobile-notch"></div>
+                    <video autoplay muted loop playsinline class="mobile-video">
+                        <source src="videos/ev-connect-portrait.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            </div><!-- /.hero-wrapper -->
+        </div><!-- /.container -->
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="reveal" aria-label="EV Connect 2026 Event Experience">
+        <div class="container">
+
+            <header class="section-header">
+                <div class="section-chip">Event Experience</div>
+                <h2>What People Will Actually Experience</h2>
+                <p>EV Connect is designed to feel energetic, visual and immersive — not just another corporate event. A full day of electric energy, community and excitement.</p>
+            </header>
+
+            <div class="experience-grid">
+
+                <article class="exp-card">
+                    <img src="images/event-experience/4.webp" alt="Grand EV Rally through Indore city streets with electric cars and bikes" loading="lazy">
+                    <div class="exp-overlay">
+                        <h3>Grand EV Rally</h3>
+                        <p>Electric cars, scooters, superbikes and commercial EVs rallying together through the city.</p>
+                    </div>
                 </article>
 
-                <div class="gallery-grid-2">
+                <article class="exp-card">
+                    <img src="images/event-experience/3.webp" alt="EV creators and media covering the rally live" loading="lazy">
+                    <div class="exp-overlay">
+                        <h3>Creators &amp; Media</h3>
+                        <p>Live coverage, interviews, influencer collaborations and high-energy social content.</p>
+                    </div>
+                </article>
 
-                    <article class="gallery-card">
+                <article class="exp-card">
+                    <img src="images/event-experience/1.webp" alt="EV startup networking and electric vehicle showcase" loading="lazy">
+                    <div class="exp-overlay">
+                        <h3>Networking &amp; Showcase</h3>
+                        <p>Meet EV founders, charging companies, startups, investors and future mobility leaders.</p>
+                    </div>
+                </article>
 
-                        <img src="images/previous-events/prev-2.jpeg" alt="Charging showcase">
+            </div>
+        </div>
+    </section>
 
-                        <div class="gallery-meta">
-                            <h3>PreRally Moments</h3>
-                           
+    <!-- ===== HIGHLIGHTS ===== -->
+    <section id="highlights" class="reveal" aria-label="EV Connect 2026 Event Highlights">
+        <div class="container">
+
+            <header class="section-header">
+                <div class="section-chip">Event Highlights</div>
+                <h2>Built For Participants &amp; Sponsors</h2>
+            </header>
+
+            <div class="highlight-grid">
+
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fa-solid fa-camera" aria-hidden="true"></i></div>
+                    <h3>Media Coverage</h3>
+                    <p>Local media, EV communities, automotive pages and digital publications covering the event live.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+                    <h3>500+ EV Community</h3>
+                    <p>EV owners, enthusiasts, startups, students, volunteers and sustainability advocates in one place.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div>
+                    <h3>30+ Influencers</h3>
+                    <p>Influencers and creators generating social reach before, during and after the EV rally.</p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+                    <h3>Industry Leaders</h3>
+                    <p>EV startups, charging companies and mobility innovators connecting in one ecosystem.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PREVIOUS EVENTS ===== -->
+    <section id="previous-events" class="previous-events reveal" aria-label="Previous EV Connect Event Highlights">
+        <div class="container">
+
+            <header class="section-header">
+                <div class="section-chip">Previous Event</div>
+                <h2>Memories From Our Last Rally</h2>
+                <p class="section-intro">Highlights from our previous EV event — showcasing the energy, community and media coverage that made it unforgettable.</p>
+            </header>
+
+            <div class="previous-media-layout">
+
+                <div class="gallery-column">
+
+                    <article class="gallery-card gallery-large">
+                        <img src="images/previous-events/prev-1.webp" alt="Electric mobility rally energy at previous EV Connect event" loading="lazy">
+                        <div class="gallery-meta"><h3>Rally Energy</h3></div>
+                    </article>
+
+                    <div class="gallery-grid-2">
+                        <article class="gallery-card">
+                            <img src="images/previous-events/prev-2.webp" alt="Pre-rally moments at previous EV event Indore" loading="lazy">
+                            <div class="gallery-meta"><h3>PreRally Moments</h3></div>
+                        </article>
+                        <article class="gallery-card">
+                            <img src="images/previous-events/prev-3.webp" alt="EV content creators and media in focus at rally" loading="lazy">
+                            <div class="gallery-meta"><h3>Creators In Focus</h3></div>
+                        </article>
+                    </div>
+
+                </div>
+
+                <div class="video-column">
+                    <div class="video-header">
+                        <div class="section-chip">Media Coverage</div>
+                        <h2>Watch the Coverage &amp; Highlights</h2>
+                        <p>Press moments, creator snippets and past event memories — embedded directly here.</p>
+                    </div>
+
+                    <div class="video-grid">
+                        <article class="video-card">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/-HEvBFnnVsU"
+                                title="EV Connect – Creator & Press Coverage"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            <h4>Creator &amp; Press Moment</h4>
+                        </article>
+                        <article class="video-card">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/XLiUQxNGkmk"
+                                title="EV Rally Highlight Video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            <h4>Rally Highlight</h4>
+                        </article>
+                        <article class="video-card">
+                            <iframe loading="lazy" src="https://www.youtube.com/embed/-HEvBFnnVsU"
+                                title="More Moments from EV Connect"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            <h4>More From The Moment</h4>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SCHEDULE ===== -->
+    <section id="schedule" class="reveal" aria-label="EV Connect 2026 Event Schedule">
+        <div class="container">
+
+            <header class="section-header">
+                <div class="section-chip">Event Schedule</div>
+                <h2>A Full Day EV Experience</h2>
+            </header>
+
+            <div class="schedule-wrapper">
+
+                <div class="schedule-image">
+                    <img src="images/event-experience/2.webp" alt="EV Connect 2026 schedule and rally route" loading="lazy">
+                </div>
+
+                <div class="timeline" role="list" aria-label="Event timeline">
+
+                    <div class="timeline-item" role="listitem">
+                        <time class="timeline-time" datetime="2026-06-14T07:00">7:00 AM</time>
+                        <div class="timeline-content">
+                            <h3>Registrations &amp; Check-In</h3>
+                            <p>Participant registrations, vehicle verification and welcome kits.</p>
                         </div>
+                    </div>
 
-                    </article>
-
-                    <article class="gallery-card">
-
-                        <img src="images/previous-events/prev-3.jpeg" alt="Media and creators">
-
-                        <div class="gallery-meta">
-                            <h3>Creators In Focus</h3>
-                            
+                    <div class="timeline-item" role="listitem">
+                        <time class="timeline-time" datetime="2026-06-14T07:45">7:45 AM</time>
+                        <div class="timeline-content">
+                            <h3>Opening Ceremony</h3>
+                            <p>Inauguration, media coverage and sponsor introductions.</p>
                         </div>
+                    </div>
 
-                    </article>
+                    <div class="timeline-item" role="listitem">
+                        <time class="timeline-time" datetime="2026-06-14T08:15">8:15 AM</time>
+                        <div class="timeline-content">
+                            <h3>EV Rally Flag-Off</h3>
+                            <p>The main rally begins featuring electric cars, scooters and bikes.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" role="listitem">
+                        <time class="timeline-time" datetime="2026-06-14T10:00">10:00 AM</time>
+                        <div class="timeline-content">
+                            <h3>Networking &amp; Showcase</h3>
+                            <p>EV startup showcase, networking sessions and creator interactions.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" role="listitem">
+                        <time class="timeline-time" datetime="2026-06-14T12:00">12:00 PM</time>
+                        <div class="timeline-content">
+                            <h3>Awards &amp; Closing</h3>
+                            <p>Appreciation ceremony, sponsor highlights and community acknowledgements.</p>
+                        </div>
+                    </div>
 
                 </div>
-
             </div>
+        </div>
+    </section>
 
-            <div class="video-column">
+    <!-- ===== SPONSORS ===== -->
+    <section class="sponsor-section reveal" id="sponsors" aria-label="EV Connect 2026 Sponsors and Partners">
+        <div class="container">
 
-                <div class="video-header">
-                    <div class="section-chip">MEDIA COVERAGE</div>
-                    <h2>Watch the coverage & highlights</h2>
-                    <p>Press moments, creator snippets and past event memories — embedded directly here.</p>
+            <header class="section-header">
+                <div class="section-chip">Sponsors &amp; Partners</div>
+                <h2>Brands Powering EV Connect</h2>
+                <p>India's top EV brands, charging networks, and mobility companies driving the electric revolution alongside us.</p>
+            </header>
+
+            <div class="logo-slider" aria-label="Sponsor logo carousel">
+                <div class="logo-track">
+                    <div class="logo-box"><img src="images/logos/logo1.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <div class="logo-box"><img src="images/logos/logo2.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <div class="logo-box"><img src="images/logos/logo3.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <div class="logo-box"><img src="images/logos/logo4.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <div class="logo-box"><img src="images/logos/logo5.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <div class="logo-box"><img src="images/logos/logo6.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="logo-box"><img src="images/logos/logo1.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <div class="logo-box"><img src="images/logos/logo2.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <div class="logo-box"><img src="images/logos/logo3.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <div class="logo-box"><img src="images/logos/logo4.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <div class="logo-box"><img src="images/logos/logo5.png" alt="EV Connect Sponsor" loading="lazy"></div>
+                    <div class="logo-box"><img src="images/logos/logo6.png" alt="EV Connect Sponsor" loading="lazy"></div>
                 </div>
-
-                <div class="video-grid">
-
-                    <article class="video-card">
-                        <iframe
-                            loading="lazy"
-                            src="https://www.youtube.com/embed/-HEvBFnnVsU"
-                            title="EV Connect - Media Coverage 1"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                            referrerpolicy="strict-origin-when-cross-origin">
-                        </iframe>
-                        <h4>Creator & Press Moment</h4>
-                    </article>
-
-                    <article class="video-card">
-                        <iframe
-                            loading="lazy"
-                            src="https://www.youtube.com/embed/XLiUQxNGkmk"
-                            title="EV Connect - Media Coverage 2"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                            referrerpolicy="strict-origin-when-cross-origin">
-                        </iframe>
-                        <h4>Rally Highlight</h4>
-                    </article>
-
-                    <article class="video-card">
-                        <iframe
-                            loading="lazy"
-                            src="https://www.youtube.com/embed/-HEvBFnnVsU"
-                            title="EV Connect - Media Coverage 3"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                            referrerpolicy="strict-origin-when-cross-origin">
-                        </iframe>
-                        <h4>More From The Moment</h4>
-                    </article>
-
-                </div>
-
             </div>
 
         </div>
-
-    </div>
-
-</section>
-<style>
-    /* =========================================================
-   PREVIOUS EVENTS — PREMIUM CREATIVE SECTION
-========================================================= */
-
-.previous-events{
-    position: relative;
-    padding: 120px 0;
-    overflow: hidden;
-    background:
-        radial-gradient(circle at top left, rgba(0,255,163,0.08), transparent 30%),
-        radial-gradient(circle at bottom right, rgba(0,170,255,0.08), transparent 30%),
-        #050816;
-}
-
-/* Background Glow */
-.previous-events::before{
-    content: "";
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    background: radial-gradient(circle, rgba(0,255,163,0.12), transparent 70%);
-    top: -300px;
-    right: -250px;
-    filter: blur(40px);
-    z-index: 0;
-}
-
-.previous-events .container{
-    position: relative;
-    z-index: 2;
-}
-
-/* =========================================================
-   SECTION HEADER
-========================================================= */
-
-.previous-events .section-header{
-    text-align: center;
-    margin-bottom: 70px;
-}
-
-.previous-events .section-chip{
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 22px;
-    border-radius: 100px;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    color: #00ffa3;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.previous-events .section-header h2{
-    font-size: clamp(2.4rem, 4vw, 4.8rem);
-    line-height: 1.1;
-    font-weight: 800;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.previous-events .section-intro{
-    max-width: 760px;
-    margin: auto;
-    font-size: 1.08rem;
-    line-height: 1.8;
-    color: rgba(255,255,255,0.72);
-}
-
-/* =========================================================
-   MAIN GRID
-========================================================= */
-
-.previous-media-layout{
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 40px;
-    align-items: start;
-}
-
-/* =========================================================
-   GALLERY SIDE
-========================================================= */
-
-.gallery-column{
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
-
-.gallery-grid-2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-}
-
-.gallery-card{
-    position: relative;
-    overflow: hidden;
-    border-radius: 30px;
-    min-height: 280px;
-    background: #111827;
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow:
-        0 20px 60px rgba(0,0,0,0.45),
-        inset 0 1px 0 rgba(255,255,255,0.04);
-    transition:
-        transform 0.5s ease,
-        box-shadow 0.5s ease,
-        border-color 0.5s ease;
-}
-
-.gallery-large{
-    min-height: 520px;
-}
-
-.gallery-card:hover{
-    transform: translateY(-12px) scale(1.01);
-    border-color: rgba(0,255,163,0.35);
-    box-shadow:
-        0 30px 80px rgba(0,0,0,0.55),
-        0 0 40px rgba(0,255,163,0.15);
-}
-
-.gallery-card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s ease;
-}
-
-.gallery-card:hover img{
-    transform: scale(1.08);
-}
-
-/* Dark cinematic overlay */
-.gallery-card::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(to top,
-        rgba(0,0,0,0.82) 5%,
-        rgba(0,0,0,0.15) 50%,
-        rgba(0,0,0,0.05) 100%);
-}
-
-/* Floating accent glow */
-.gallery-card::before{
-    content: "";
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background: rgba(0,255,163,0.18);
-    filter: blur(70px);
-    top: -40px;
-    right: -40px;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.gallery-card:hover::before{
-    opacity: 1;
-}
-
-/* =========================================================
-   TEXT OVERLAY
-========================================================= */
-
-.gallery-meta{
-    position: absolute;
-    left: 28px;
-    bottom: 28px;
-    z-index: 3;
-}
-
-.gallery-meta h3{
-    color: #fff;
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin-bottom: 8px;
-    letter-spacing: 0.5px;
-    transform: translateY(20px);
-    opacity: 0;
-    transition: all 0.45s ease;
-}
-
-.gallery-card:hover .gallery-meta h3{
-    transform: translateY(0);
-    opacity: 1;
-}
-
-/* =========================================================
-   VIDEO COLUMN
-========================================================= */
-
-.video-column{
-    position: sticky;
-    top: 120px;
-}
-
-.video-header{
-    margin-bottom: 30px;
-}
-
-.video-header h2{
-    font-size: 2.4rem;
-    line-height: 1.2;
-    color: #fff;
-    margin: 15px 0;
-}
-
-.video-header p{
-    color: rgba(255,255,255,0.72);
-    line-height: 1.8;
-}
-
-.video-grid{
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
-
-.video-card{
-    position: relative;
-    overflow: hidden;
-    border-radius: 28px;
-    padding: 14px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(18px);
-    transition: all 0.45s ease;
-}
-
-.video-card:hover{
-    transform: translateY(-10px);
-    border-color: rgba(0,255,163,0.4);
-    box-shadow:
-        0 20px 60px rgba(0,0,0,0.45),
-        0 0 30px rgba(0,255,163,0.12);
-}
-
-.video-card iframe{
-    width: 100%;
-    height: 230px;
-    border: none;
-    border-radius: 18px;
-}
-
-.video-card h4{
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 16px 8px 6px;
-    letter-spacing: 0.4px;
-}
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
-@media(max-width: 1100px){
-
-    .previous-media-layout{
-        grid-template-columns: 1fr;
-    }
-
-    .video-column{
-        position: relative;
-        top: unset;
-    }
-
-}
-
-@media(max-width: 768px){
-
-    .previous-events{
-        padding: 90px 0;
-    }
-
-    .gallery-grid-2{
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-large{
-        min-height: 400px;
-    }
-
-    .gallery-card{
-        min-height: 260px;
-    }
-
-    .video-card iframe{
-        height: 220px;
-    }
-
-    .gallery-meta h3{
-        font-size: 1.35rem;
-    }
-
-    .video-header h2{
-        font-size: 2rem;
-    }
-
-}
-</style>
-<!-- ================= SCHEDULE ================= -->
-
-<section id="schedule">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-chip">
-                EVENT SCHEDULE
-            </div>
-
-            <h2>
-                A Full Day EV Experience
-            </h2>
-
-        </div>
-
-        <div class="schedule-wrapper">
-
-            <div class="schedule-image">
-
-                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop">
-
-            </div>
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-
-                    <div class="timeline-time">
-                        7:00 AM
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>Registrations & Check-In</h3>
-
-                        <p>
-                            Participant registrations, vehicle verification and welcome kits.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="timeline-item">
-
-                    <div class="timeline-time">
-                        7:45 AM
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>Opening Ceremony</h3>
-
-                        <p>
-                            Inauguration, media coverage and sponsor introductions.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="timeline-item">
-
-                    <div class="timeline-time">
-                        8:15 AM
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>EV Rally Flag-Off</h3>
-
-                        <p>
-                            The main rally begins featuring electric cars, scooters and bikes.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="timeline-item">
-
-                    <div class="timeline-time">
-                        10:00 AM
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>Networking & Showcase</h3>
-
-                        <p>
-                            EV startup showcase, networking sessions and creator interactions.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="timeline-item">
-
-                    <div class="timeline-time">
-                        12:00 PM
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>Awards & Closing</h3>
-
-                        <p>
-                            Appreciation ceremony, sponsor highlights and community acknowledgements.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= SPONSORS ================= -->
-
-<section class="sponsor-section" id="sponsors">
-
-    <div class="container">
-
-        <div class="section-header">
-
-            <div class="section-chip">
-                SPONSORS & PARTNERS
-            </div>
-
-            <h2>
-                Brands Powering EV Connect
-            </h2>
-
-            <p>
-                Sponsor logos, partner showcases and premium brand visibility opportunities.
-            </p>
-
-        </div>
-
-        <div class="logo-slider">
-
-            <div class="logo-track">
-
-                <div class="logo-box">
-                    <img src="images/logos/logo1.png">
-                </div>
-
-                <div class="logo-box">
-                    <img src="images/logos/logo2.png">
-                </div>
-
-                <div class="logo-box">
-                    <img src="images/logos/logo3.png">
-                </div>
-
-                <div class="logo-box">
-                    <img src="images/logos/logo4.png">
-                </div>
-
-                <div class="logo-box">
-                    <img src="images/logos/logo5.png">
-                </div>
-
-                <div class="logo-box">
-                    <img src="images/logos/logo6.png">
-                </div>
-
-                <div class="logo-box">
-                    <img src="images/logos/logo1.png">
-                </div>
-
-                <div class="logo-box">
-                    <img src="images/logos/logo2.png">
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= LOCATION ================= -->
-
-<section id="location">
-
-    <div class="container">
-
-        <div class="location-wrapper">
-
-            <div class="location-content">
-
-                <div class="section-chip">
-                    EVENT LOCATION
-                </div>
-
-                <h2>
-                    EV Connect 2026 Venue
-                </h2>
-
-                <p>
-                    The rally and showcase experience will take place at one of Indore's most accessible and premium business locations.
-                </p>
-
-                <div class="location-points">
-
-                    <div>
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        NRK Business Park, Vijay Nagar, Indore
-
-                    </div>
-
-                    <div>
-
-                        <i class="fa-solid fa-calendar-days"></i>
-
-                        June 14, 2026
-
-                    </div>
-
-                    <div>
-
-                        <i class="fa-solid fa-clock"></i>
-
-                        7:00 AM Onwards
-
-                    </div>
-
-                    <div>
-
-                        <i class="fa-solid fa-car-side"></i>
-
-                        Dedicated EV Parking & Entry
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="location-map">
-
-                <iframe 
-                src="https://www.google.com/maps?q=NRK+Business+Park+Indore&output=embed"
-                allowfullscreen=""
-                loading="lazy">
-                </iframe>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= REGISTER ================= -->
-
-<section id="register">
-
-    <div class="container">
-
-        <div class="register-box">
-
-            <div class="register-grid">
-
-                <div class="register-left">
-
-                    <div class="section-chip">
-                        REGISTRATIONS OPEN
-                    </div>
-
-                    <h2>
-                        Join India's EV Movement
-                    </h2>
-
-                    <p>
-                        Register as a participant, sponsor, startup, volunteer or EV enthusiast and receive your unique registration ID directly on email.
-                    </p>
-
-                    <div class="register-points">
-
+    </section>
+
+    <!-- ===== LOCATION ===== -->
+    <section id="location" class="reveal" aria-label="EV Connect 2026 Venue Location in Indore">
+        <div class="container">
+            <div class="location-wrapper">
+
+                <div class="location-content">
+                    <div class="section-chip">Event Location</div>
+                    <h2>EV Connect 2026 Venue</h2>
+                    <p>The rally and showcase experience will take place at one of Indore's most accessible and premium business locations — Vijay Nagar Playground.</p>
+
+                    <div class="location-points">
                         <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                            Unique Entry Pass
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <span>Vijay Nagar Playground, Near NRK Business Park, Vijay Nagar, Indore</span>
                         </div>
-
                         <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                            Event Updates Via Email
+                            <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                            <span><time datetime="2026-06-14">June 14, 2026</time></span>
                         </div>
-
                         <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                            Sponsor & Startup Networking
+                            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                            <span>7:00 AM Onwards</span>
                         </div>
-
                         <div>
-                            <i class="fa-solid fa-circle-check"></i>
-                            Volunteer Certificates
+                            <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+                            <span>Dedicated EV Parking &amp; Entry</span>
                         </div>
+                    </div>
+                </div>
 
+                <div class="location-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4110.560553231144!2d75.89702919999999!3d22.7511682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396303846ad9a4a1%3A0x6aee3d9c0f238c24!2sVijay%20Nagar%20Playground!5e1!3m2!1sen!2sin!4v1780121531802!5m2!1sen!2sin"
+                        title="Vijay Nagar Playground, Indore – EV Connect 2026 Venue"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REGISTER ===== -->
+    <section id="register" class="reveal" aria-label="Register for EV Connect 2026">
+        <div class="container">
+            <div class="register-box">
+                <div class="register-grid">
+
+                    <div class="register-left">
+                        <div class="section-chip">Registrations Open</div>
+                        <h2>Join India's EV Movement</h2>
+                        <p>Register as a participant, sponsor, startup, volunteer or EV enthusiast and receive your unique registration ID directly on email.</p>
+
+                        <div class="register-points">
+                            <div><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Unique Entry Pass</div>
+                            <div><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Event Updates Via Email</div>
+                            <div><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Sponsor &amp; Startup Networking</div>
+                            <div><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Volunteer Certificates</div>
+                        </div>
+                    </div>
+
+                    <div class="register-form">
+                        <form id="registrationForm" action="/register" method="POST" novalidate>
+
+                            <div class="form-group">
+                                <label for="name" class="visually-hidden">Full Name</label>
+                                <input id="name" type="text" name="name" placeholder="Full Name" required autocomplete="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="visually-hidden">Email Address</label>
+                                <input id="email" type="email" name="email" placeholder="Email Address" required autocomplete="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="visually-hidden">Phone Number</label>
+                                <input id="phone" type="tel" name="phone" placeholder="Phone Number" required autocomplete="tel">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="type" class="visually-hidden">Registration Type</label>
+                                <select id="type" name="type" required>
+                                    <option value="">Select Registration Type</option>
+                                    <option value="EV Participant">EV Participant</option>
+                                    <option value="Sponsor">Sponsor</option>
+                                    <option value="Volunteer">Volunteer</option>
+                                    <option value="Startup / Brand">Startup / Brand</option>
+                                    <option value="Media / Creator">Media / Creator</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="visually-hidden">Message</label>
+                                <textarea id="message" rows="4" name="message" placeholder="Tell us about your participation"></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Complete Registration</button>
+
+                        </form>
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="register-form">
+    <!-- ===== FOOTER ===== -->
+    <footer role="contentinfo">
+        <div class="container footer-grid">
 
-                    <form action="/register" method="POST">
+            <div>
+                <h3>EV Connect 2026</h3>
+                <p>India's futuristic EV rally and electric mobility experience organized by EV Urjaa &amp; 4K Media Marketing.</p>
+            </div>
 
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Full Name" required>
-                        </div>
+            <nav aria-label="Footer navigation">
+                <h3>Quick Links</h3>
+                <a href="#experience">Experience</a><br>
+                <a href="#highlights">Highlights</a><br>
+                <a href="#schedule">Schedule</a><br>
+                <a href="#register">Register</a>
+            </nav>
 
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Email Address" required>
-                        </div>
+            <div>
+                <h3>Event Details</h3>
+                <p>Vijay Nagar Playground, Near NRK Business Park, Indore</p>
+                <p><time datetime="2026-06-14">June 14, 2026</time></p>
+                <p>7:00 AM Onwards</p>
+            </div>
 
-                        <div class="form-group">
-                            <input type="tel" name="phone" placeholder="Phone Number" required>
-                        </div>
-
-                        <div class="form-group">
-
-                            <select name="type" required>
-
-                                <option value="">Select Registration Type</option>
-
-                                <option>EV Participant</option>
-                                <option>Sponsor</option>
-                                <option>Volunteer</option>
-                                <option>Startup / Brand</option>
-                                <option>Media / Creator</option>
-
-                            </select>
-
-                        </div>
-
-                        <div class="form-group">
-                            <textarea rows="4" name="message" placeholder="Tell us about your participation"></textarea>
-                        </div>
-
-                        <button class="submit-btn">
-                            Complete Registration
-                        </button>
-
-                    </form>
-
-                </div>
-
+            <div>
+                <h3>Follow The Movement</h3>
+                <p>#EVConnect2026</p>
+                <p>#DriveTheFuture</p>
+                <p>#GoElectric</p>
             </div>
 
         </div>
 
-    </div>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="container footer-grid">
-
-        <div>
-
-            <h3>EV Connect 2026</h3>
-
-            <p>
-                India's futuristic EV rally and electric mobility experience organized by EV Urjaa & 4K Media Marketing.
-            </p>
-
+        <div class="footer-bottom">
+            &copy; 2026 EV Connect | Organized by EV Urjaa &amp; 4K Media Marketing
         </div>
+    </footer>
 
-        <div>
-
-            <h3>Quick Links</h3>
-
-            <a href="#experience">Experience</a><br>
-            <a href="#highlights">Highlights</a><br>
-            <a href="#schedule">Schedule</a><br>
-            <a href="#register">Register</a>
-
-        </div>
-
-        <div>
-
-            <h3>Event Details</h3>
-
-            <p>NRK Business Park, Indore</p>
-            <p>June 7, 2026</p>
-            <p>7:00 AM Onwards</p>
-
-        </div>
-
-        <div>
-
-            <h3>Follow The Movement</h3>
-
-            <p>#EVConnect2026</p>
-            <p>#DriveTheFuture</p>
-            <p>#GoElectric</p>
-
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        © 2026 EV Connect | Organized by EV Urjaa & 4K Media Marketing
-    </div>
-
-</footer>
-
-<script>
-
-window.addEventListener('scroll',function(){
-
-    const navbar = document.getElementById('navbar');
-
-    if(window.scrollY > 40){
-        navbar.classList.add('scrolled');
-    }
-    else{
-        navbar.classList.remove('scrolled');
-    }
-
-});
-
-</script>
+    <!-- Page UI script (navbar, video, reveal) -->
+    <script src="script.js" defer></script>
 
 </body>
 </html>

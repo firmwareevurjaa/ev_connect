@@ -1,10 +1,11 @@
 [
   {
-    "name": "Test User",
-    "email": "test@example.com",
-    "phone": "1234567890",
-    "vehicle": "electric-bike",
-    "organization": "TestOrg",
-    "submittedAt": "2026-05-29T07:03:20.209Z"
+    "name": "IT EV Urjaa",
+    "email": "it.evurjaa@gmail.com",
+    "phone": "07987499340",
+    "type": "EV Participant",
+    "message": "hi",
+    "submittedAt": "2026-05-30T11:20:35.357Z",
+    "code": "EVCN-WUCF-348927"
   }
 ]
